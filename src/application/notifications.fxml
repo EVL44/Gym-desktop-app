@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #151515;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NController">
+   <children>
+      <VBox prefHeight="450.0" prefWidth="50.0" style="-fx-background-color: #292929;" styleClass="sideBar" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="menu" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sideIconsBg" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/bars.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="home" mnemonicParsing="false" onAction="#switchToHome" prefHeight="50.0" prefWidth="50.0" styleClass="sideIconsBg" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/House-f.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToAdd" prefHeight="50.0" prefWidth="50.0" styleClass="sideIconsBg" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/User_fill_add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="members" mnemonicParsing="false" onAction="#switchToMembers" prefHeight="50.0" prefWidth="50.0" styleClass="sideIconsBg" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/Group.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="notifications" mnemonicParsing="false" onAction="#switchToAdd" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #151515;" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/Bell-f.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="70.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="settings" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sideIconsBg" stylesheets="@style.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/gear.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="50.0" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #151515;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="notificationsVBox" layoutX="12.0" layoutY="83.2" prefHeight="836.0" prefWidth="700.0" style="-fx-background-color: #151515;" AnchorPane.bottomAnchor="-469.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="83.0" />
+            <Label layoutX="28.0" layoutY="21.0" prefHeight="50.0" prefWidth="242.0" text="All Notifications" textFill="WHITE">
+               <font>
+                  <Font name="Cairo Black" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+.table{
+	-fx-background-color:transparent;
+	
+}
+.sideBar {
+	-fx-background-color :  #292929;
+	-fx-background-radius :  20;
+}
+
+.infoBox {
+	-fx-background-color :  #292929;
+	-fx-background-radius :  20;
+}
+
+.sideIcons:hover {
+	-fx-cursor :  hand;
+}
+
+.sideIconsBg {
+	-fx-background-color : #292929;
+}
+
+.sideIconsBg:hover {
+	-fx-background-color : #151515;
+}
+
+.btn-close {
+	-fx-background-color : #292929;
+	-fx-cursor : -fx-cursor;
+}
+
+.btn-close:hover {
+	-fx-background-color : red;
+}
+
+.text-field {
+	-fx-background-color :  #292929;
+    -fx-text-fill: white;
+    -fx-background-radius:40px;
+    -fx-border-radius:40px;
+    -fx-border-color:grey;
+}
+.clicked {
+    -fx-background-color: #FFE500;
+    -fx-background-radius: 50px; 
+}
+
+#btnok:hover {
+    -fx-background-color: white; 
+}
+#add:hover {
+    -fx-background-color: white; 
+}
+

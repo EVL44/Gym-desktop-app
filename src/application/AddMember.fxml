@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="450.0" minWidth="800.0" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #151515;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AController">
+    <children>
+        <Button fx:id="add" layoutX="558.0" layoutY="359.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="39.0" prefWidth="137.0" styleClass="clicked" stylesheets="@style.css" text="Add" AnchorPane.rightAnchor="104.39999999999998" AnchorPane.topAnchor="359.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <VBox prefHeight="450.0" prefWidth="50.0" styleClass="sideBar" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sideIconsBg" stylesheets="@../../../gym/src/application/style.css" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/bars.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="home" mnemonicParsing="false" onAction="#switchToHome" prefHeight="50.0" prefWidth="50.0" styleClass="sideIconsBg" stylesheets="@../../../gym/src/application/style.css" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" onDragDetected="#switchToHome" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/House-f.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #151515;" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/User_fill_add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="members" mnemonicParsing="false" onAction="#switchToMembers" prefHeight="50.0" prefWidth="50.0" styleClass="sideIconsBg" stylesheets="@../../../gym/src/application/style.css" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/Group.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToNotif" prefHeight="50.0" prefWidth="50.0" styleClass="sideIconsBg" stylesheets="@../../../gym/src/application/style.css" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/Bell-f.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="70.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sideIconsBg" stylesheets="@../../../gym/src/application/style.css" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/gear.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="79.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Member To the Gym" textAlignment="CENTER" wrappingWidth="438.4340834617615" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="282.5659165382385" AnchorPane.topAnchor="13.90999984741211">
+         <font>
+            <Font name="Cairo Black" size="30.0" />
+         </font>
+      </Text>
+          <TextField fx:id="txtprenom" layoutX="111.0" layoutY="94.0" prefHeight="45.0" prefWidth="237.0" promptText="Prenom" stylesheets="@style.css" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="94.0" />
+          <TextField fx:id="txtgender" layoutX="230.0" layoutY="179.0" prefHeight="46.0" prefWidth="118.0" promptText="Gender (M / F)" stylesheets="@style.css" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="179.0" />
+          <TextField fx:id="txtamount" layoutX="460.0" layoutY="259.0" prefHeight="45.0" prefWidth="235.0" promptText="amount" styleClass="text-field" stylesheets="@style.css" AnchorPane.rightAnchor="104.79999999999995" AnchorPane.topAnchor="259.0" />
+          <TextField fx:id="txtduration" layoutX="111.0" layoutY="259.0" prefHeight="45.0" prefWidth="237.0" promptText="Duration" stylesheets="@style.css" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="259.0" />
+          <TextField fx:id="txtnom" layoutX="462.0" layoutY="95.0" prefHeight="45.0" prefWidth="235.0" promptText="nom" stylesheets="@style.css" AnchorPane.rightAnchor="102.79999999999995" AnchorPane.topAnchor="95.0" />
+          <TextField fx:id="txtage" layoutX="111.0" layoutY="179.0" prefHeight="46.0" prefWidth="97.0" promptText="Age" stylesheets="@style.css" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="179.0" />
+          <TextField fx:id="txtnumberphone" layoutX="460.0" layoutY="179.0" prefHeight="45.0" prefWidth="235.0" promptText="Phone number" stylesheets="@style.css" AnchorPane.rightAnchor="104.79999999999995" AnchorPane.topAnchor="179.0" />
+    </children>
+</AnchorPane>
